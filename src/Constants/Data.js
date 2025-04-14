@@ -1,0 +1,61 @@
+export const footerLinks = [
+    {
+      title: "Product",
+      links: [
+        "Publish",
+        "Engage",
+        "Calendar",
+        "Analytics",
+        "Social Listening",
+        "Workspace & Team Collaboration",
+        "Competitor Analysis",
+        "Champ AI Suite",
+      ],
+    },
+    {
+      title: "Resources",
+      links: [
+        "About us",
+        "Blog",
+        "Case Studies",
+        "Updates",
+        "Affiliate program",
+        "Roadmap",
+        "Careers",
+        "Join Our Community",
+        "Ambassador Program",
+        "Download",
+      ],
+    },
+    {
+      title: "Support",
+      links: ["Status", "Helpdesk", "Contact us", "Talk to sales"],
+    },
+    {
+      title: "Alternatives",
+      links: [
+        "Hootsuite alternatives",
+        "Buffer alternatives",
+        "Agorapulse alternatives",
+        "Sprout Social alternatives",
+        "Later alternatives",
+        "eClincher Alternatives",
+        "Sendible alternatives",
+        "Loomly alternatives",
+        "MeetEdgar alternatives",
+      ],
+    },
+    {
+      title: "Free tools",
+      links: [
+        "Instagram Hashtag Generator",
+        "TikTok Hashtag Generator",
+        "AI Tweet Generator",
+        "TikTok Username Generator",
+        "Instagram Username Generator",
+        "LinkedIn Post Generator",
+        "Hashtag Generator",
+        "Facebook Post Generator",
+      ],
+    },
+  ];
