@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from "../../assets/site-logo-new.svg";
 import caroline from "../../assets/caroline.png";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -39,6 +40,11 @@ const Login = () => {
           <button className="w-full bg-[#FF6A00] text-white text-[18px] font-semibold py-[10px] rounded-md cursor-pointer hover:bg-orange-400">
             Login
           </button>
+          <button className="w-full mt-4 py-[10px] rounded-md cursor-pointer font-semibold text-[18px] flex items-center justify-center gap-3 bg-white text-gray-700 border border-gray-300 shadow hover:shadow-md hover:bg-gray-50 transition">
+          <FcGoogle  className="w-6 h-6" />
+  Continue with Google
+</button>
+
 
           <div className="flex flex-col sm:flex-row sm:justify-between mt-4 text-[14px] sm:text-[16px] font-semibold text-[#1A1A1A] space-y-2 sm:space-y-0">
             <a href="#" className="hover:underline">Create an account</a>

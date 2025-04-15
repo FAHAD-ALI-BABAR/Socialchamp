@@ -6,15 +6,19 @@ import Testimonials from '../Component/Testimonials/Testimonials'
 import Features from '../Component/Features/Features'
 import Newsletter from '../Component/Newsletter/Newsletter'
 import Questions from '../Component/Questions/Questions'
+import Dashboard from '../Component/Dashboard/Dashboard'
+import Featuregrid from '../Component/Featuregrid/Featuregrid'
 
 const Contact_sales = () => {
   return (
     <>
     <Navbar/>
     <Hero/>
-    <Testimonials/>
+    <Dashboard/>
     <Features/>
     <Questions/>
+    <Testimonials/>
+    <Featuregrid/>
     <Newsletter/>
     <Footer/>
     </>

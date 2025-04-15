@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="flex-1 space-y-6">
           <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900">
           Effortless Social Media Management <br />
-            Management —  <span className="text-orange-500">Save Time. Get Seen. Grow Faster. </span>
+            Tool —  <span className="text-orange-500">Save Time. Get Seen. Grow Faster. </span>
           </h1>
 
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
