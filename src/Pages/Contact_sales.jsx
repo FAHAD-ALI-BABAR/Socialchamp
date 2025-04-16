@@ -19,7 +19,7 @@ const Contact_sales = () => {
     <Questions/>
     <Testimonials/>
     <Featuregrid/>
-    <Newsletter/>
+    {/* <Newsletter/> */}
     <Footer/>
     </>
   )

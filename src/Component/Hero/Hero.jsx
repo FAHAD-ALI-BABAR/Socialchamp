@@ -1,5 +1,6 @@
 import React from 'react'
 import hero_sec_image from "../../assets/social-champ-hero_sec_img.png"
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
    <>
@@ -19,11 +20,11 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex justify-center flex-wrap gap-4 ">
             <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-md transition duration-200 text-base md:text-lg">
-              Start Free →
+            <Link to="/register">Start Free Trial →</Link>
             </button>
-            <button className="border border-gray-300 hover:bg-gray-100 text-gray-800 font-semibold px-6 py-3 rounded-md transition duration-200 text-base md:text-lg">
+            {/* <button className="border border-gray-300 hover:bg-gray-100 text-gray-800 font-semibold px-6 py-3 rounded-md transition duration-200 text-base md:text-lg">
               Book a demo →
-            </button>
+            </button> */}
           </div>
 
           {/* Trial Note */}

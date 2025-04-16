@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
 
       
-        <div className="hidden lg:flex items-center space-x-6 xl:space-x-10 text-[#3f3f3f]">
+        {/* <div className="hidden lg:flex items-center space-x-6 xl:space-x-10 text-[#3f3f3f]">
           {['Why Social Champ', 'Product', 'Resources'].map((item) => (
             <div key={item} className="flex items-center space-x-1 cursor-pointer">
               <span className="text-[18px] font-[500]">{item}</span>
@@ -27,7 +27,7 @@ const Navbar = () => {
           ))}
           <span className="text-[18px] font-[500] hover:underline cursor-pointer">Pricing</span>
           <span className="text-[18px] font-[500] hover:underline cursor-pointer">Contact Sales</span>
-        </div>
+        </div> */}
 
         
         <div className="flex items-center space-x-4 lg:space-x-6">
@@ -35,7 +35,7 @@ const Navbar = () => {
             <Link to="/login">Login</Link>
           </button>
           <button className="bg-[#fff176] text-[16px] font-semibold text-black rounded-lg px-4 py-2 shadow hover:underline">
-            <Link to="/register"> start Free Trial</Link>
+            <Link to="/register">Register</Link>
           </button>
         </div>
       </nav>
