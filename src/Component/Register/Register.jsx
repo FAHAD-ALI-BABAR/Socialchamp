@@ -1,16 +1,21 @@
 import React, { useState } from 'react'
 import logo from "../../assets/file.jpg";
 import caroline from "../../assets/caroline.png";
-import mobile from "../../assets/mobile.png"
-import { FcGoogle } from "react-icons/fc";// Right-side image
+import mobile from "../../assets/mobile.png";
+import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
+
 const Register = () => {
-      const [showPassword, setShowPassword] = useState(false);
-    
+  const [showPassword, setShowPassword] = useState(false);
+  const [password, setPassword] = useState("");
+  
+
+  
+
   return (
     <>
       <div className="flex flex-col lg:flex-row h-full lg:h-screen font-sans">
-        {/* left-side-form-codee */}
+        {/* left-side-form-code */}
         <div className="w-full lg:w-1/2 xl:w-1/3 bg-white flex flex-col justify-center px-6 sm:px-10 md:px-16 lg:px-20 py-10">
           <img
             src={logo}
@@ -30,6 +35,7 @@ const Register = () => {
               type="text"
               className="w-full px-3 py-[12px] text-[16px] sm:text-[18px] border border-gray-300 rounded-md mb-4 focus:outline-none"
             />
+
             <label className="block text-[16px] sm:text-[18px] font-semibold mb-1">
               Email address
             </label>
@@ -44,6 +50,8 @@ const Register = () => {
             <div className="relative mb-4">
               <input
                 type={showPassword ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 className="w-full px-3 py-[12px] text-[16px] sm:text-[18px] border border-gray-300 rounded-md focus:outline-none"
               />
               <span
@@ -54,9 +62,23 @@ const Register = () => {
               </span>
             </div>
 
-            <button className="w-full bg-[#00ABE4] text-white text-[18px] font-semibold py-[10px] rounded-md cursor-pointer hover:bg-blue-500">
+            <label className="block text-[16px] sm:text-[18px] font-semibold mb-1">
+              Confirm Password
+            </label>
+            <input
+              type='password'
+              className="w-full px-3 py-[12px] text-[16px] sm:text-[18px] border border-gray-300 rounded-md mb-2 focus:outline-none"
+            />
+
+           
+
+            <button
+              
+              className="w-full bg-[#00ABE4] text-white text-[18px] font-semibold py-[10px] rounded-md cursor-pointer hover:bg-blue-500"
+            >
               Register
             </button>
+
             <button className="w-full mt-4 py-[10px] rounded-md cursor-pointer font-semibold text-[18px] flex items-center justify-center gap-3 bg-white text-gray-700 border border-gray-300 shadow hover:shadow-md hover:bg-gray-50 transition">
               <FcGoogle className="w-6 h-6" />
               Continue with Google
@@ -87,4 +109,4 @@ const Register = () => {
   );
 }
 
-export default Register
+export default Register;
