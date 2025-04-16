@@ -59,7 +59,7 @@ const Dashboard = () => {
   return (
     <>
 
-<div className="flex flex-col md:flex-row h-full w-full bg-gradient-to-r from-yellow-200 via-yellow-100 to-white">
+<div className="flex flex-col md:flex-row h-full w-full bg-gradient-to-r from-blue-200 via-blue-100 to-white">
       {/* Left Side Panel */}
       <div className="w-full md:w-1/2 p-8 md:p-10">
         {features.map((feature) => (
@@ -67,16 +67,16 @@ const Dashboard = () => {
             key={feature.id}
             onClick={() => setActiveTab(feature.id)}
             className={`flex items-center justify-between border-b py-4 cursor-pointer transition-all duration-300 group ${
-              activeTab === feature.id ? "text-orange-600 bg-orange-50 rounded-xl px-3" : "text-gray-700"
+              activeTab === feature.id ? "text-[#00ABE4] bg-orange-50 rounded-xl px-3" : "text-gray-700"
             }`}
           >
             <div className="flex items-center gap-4">
-              <div className="text-2xl bg-orange-100 text-orange-600 p-2 rounded-full shadow-sm">{feature.icon}</div>
-              <div className="font-bold text-lg group-hover:text-orange-500 transition-colors duration-200">
+              <div className="text-2xl bg-orange-100 text-[#00ABE4] p-2 rounded-full shadow-sm">{feature.icon}</div>
+              <div className="font-bold text-lg group-hover:text-[#00ABE4] transition-colors duration-200">
                 {feature.label}
               </div>
             </div>
-            <div className="text-xl group-hover:text-orange-500">{activeTab === feature.id ? "\u25b2" : "\u25bc"}</div>
+            <div className="text-xl group-hover:text-[#00ABE4]">{activeTab === feature.id ? "\u25b2" : "\u25bc"}</div>
           </div>
         ))}
 
@@ -89,13 +89,13 @@ const Dashboard = () => {
           </p>
         </div>
 
-        <button className="mt-8 px-5 py-3 bg-orange-500 text-white rounded-xl font-medium shadow hover:bg-orange-600 transition">
+        <button className="mt-8 px-5 py-3 bg-[#00ABE4] text-white rounded-xl font-medium shadow hover:bg-blue-500 transition">
           Explore all features ➜
         </button>
       </div>
 
       {/* Right Image Panel */}
-      <div className="w-full md:w-1/2 flex items-center justify-center p-10 bg-yellow-300 rounded-tl-[60px] relative">
+      <div className="w-full md:w-1/2 flex items-center justify-center p-10 bg-[#00ABE4] rounded-tl-[60px] relative">
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-white w-full max-w-md md:max-w-lg lg:max-w-xl">
           <img
             key={activeTab}
@@ -104,7 +104,7 @@ const Dashboard = () => {
             className="w-full h-auto object-contain rounded-xl"
           />
         </div>
-        <div className="absolute top-6 right-6 bg-white text-yellow-500 font-bold px-4 py-1 rounded-full shadow">Feature Preview</div>
+        <div className="absolute top-6 right-6 bg-white text-[#00ABE4] font-bold px-4 py-1 rounded-full shadow">Feature Preview</div>
       </div>
     </div>
 

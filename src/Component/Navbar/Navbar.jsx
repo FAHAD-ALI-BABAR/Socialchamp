@@ -31,10 +31,10 @@ const Navbar = () => {
 
         
         <div className="flex items-center space-x-4 lg:space-x-6">
-          <button className="text-[16px] text-[#f16a21] font-medium hover:underline">
+          <button className="text-[16px] text-[#00ABE4] font-medium hover:underline">
             <Link to="/login">Login</Link>
           </button>
-          <button className="bg-[#fff176] text-[16px] font-semibold text-black rounded-lg px-4 py-2 shadow hover:underline">
+          <button className="bg-[#E9F1FA] text-[16px] font-semibold text-black rounded-lg px-4 py-2 shadow hover:underline">
             <Link to="/register">Register</Link>
           </button>
         </div>
@@ -58,17 +58,17 @@ const Navbar = () => {
 
         {isMobileMenuOpen && (
           <div className="mt-4 flex flex-col space-y-4 text-[#3f3f3f]">
-            {['Why Social Champ', 'Product', 'Resources'].map((item) => (
+            {/* {['Why Social Champ', 'Product', 'Resources'].map((item) => (
               <div key={item} className="flex items-center space-x-2 cursor-pointer">
                 <span className="text-[16px] font-medium">{item}</span>
                 <span className="text-[10px]">▼</span>
               </div>
-            ))}
-            <span className="text-[16px] font-medium hover:underline">Pricing</span>
+            ))} */}
+            {/* <span className="text-[16px] font-medium hover:underline">Pricing</span>
             <span className="text-[16px] font-medium hover:underline">Contact Sales</span>
-            <hr />
-            <button className="text-[16px] text-[#f16a21] font-medium hover:underline">Login</button>
-            <button className="bg-[#fff176] text-[16px] font-semibold text-black rounded-lg px-4 py-2 shadow hover:underline">
+            <hr /> */}
+            <button className="text-[16px] text-[#00ABE4] font-medium hover:underline">Login</button>
+            <button className="bg-[#E9F1FA] text-[16px] font-semibold text-black rounded-lg px-4 py-2 shadow hover:underline">
               Start Free Trial
             </button>
           </div>

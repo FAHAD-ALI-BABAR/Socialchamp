@@ -54,7 +54,7 @@ const Register = () => {
               </span>
             </div>
 
-            <button className="w-full bg-[#FF6A00] text-white text-[18px] font-semibold py-[10px] rounded-md cursor-pointer hover:bg-orange-400">
+            <button className="w-full bg-[#00ABE4] text-white text-[18px] font-semibold py-[10px] rounded-md cursor-pointer hover:bg-blue-500">
               Register
             </button>
             <button className="w-full mt-4 py-[10px] rounded-md cursor-pointer font-semibold text-[18px] flex items-center justify-center gap-3 bg-white text-gray-700 border border-gray-300 shadow hover:shadow-md hover:bg-gray-50 transition">

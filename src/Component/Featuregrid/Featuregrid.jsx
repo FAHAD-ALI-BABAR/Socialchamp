@@ -5,8 +5,8 @@ const Featuregrid = () => {
     
   return (
     <>
-   <section className="bg-[#f4f6f8] px-6 py-14 md:py-20 max-w-full">
-      <div className="max-w-8xl mx-auto flex flex-col lg:flex-row items-center justify-between bg-white rounded-3xl p-6 md:p-10 shadow-md gap-10">
+   <section className="bg-[#ffffff] px-6 py-14 md:py-20 max-w-full">
+      <div className="max-w-8xl mx-auto flex flex-col lg:flex-row items-center justify-between bg-[#E9F1FA] rounded-3xl p-6 md:p-10 shadow-md gap-10">
         {/* Left Side: Image */}
         <div className="w-full lg:w-1/2">
           <div className="bg-[#dce2e8] rounded-[2rem] p-6 relative">
@@ -30,7 +30,7 @@ const Featuregrid = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-            <button className="bg-orange-500 hover:bg-orange-400 text-white font-semibold text-sm md:text-base px-6 py-3 rounded-full transition-shadow shadow-md">
+            <button className="bg-blue-500 hover:bg-blue-400 text-white font-semibold text-sm md:text-base px-6 py-3 rounded-full transition-shadow shadow-md">
               Start your free 30-day trial
             </button>
             <button className="text-[#00315a] hover:underline font-semibold text-sm md:text-base">

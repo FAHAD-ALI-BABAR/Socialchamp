@@ -31,11 +31,11 @@ const Features = () => {
       <h2 className="text-6xl font-black text-gray-800 mb-10">
         Why You'll Love Us
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl shadow-lg p-16 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center"
+            className="bg-[#E9F1FA] rounded-2xl shadow-lg p-16 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center"
           >
             <div className="mb-6  flex justify-center items-center">
               {feature.icon}

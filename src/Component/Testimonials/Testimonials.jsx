@@ -37,7 +37,7 @@ import {testimonials} from "../../Constants/Data"
     }
   
     return (
-      <div className="text-orange-500 text-lg tracking-wider">
+      <div className="text-[#00ABE4] text-lg tracking-wider">
         {stars}
       </div>
     );
@@ -56,7 +56,7 @@ const Testimonials = () => {
       };
   return (
     <>
-     <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 w-full">
+     <section className="bg-[#E9F1FA] py-16 px-4 sm:px-6 lg:px-8 w-full">
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-black text-gray-800 mb-3">What Our Clients Say</h2>
         <p className="text-gray-600 text-xl">Real feedback from businesses growing with us</p>

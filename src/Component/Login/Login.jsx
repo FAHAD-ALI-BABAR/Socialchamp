@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <div className="flex flex-col lg:flex-row h-full lg:h-screen font-sans">
       {/* left-side-form-codee */}
-      <div className="w-full lg:w-1/2 xl:w-1/3 bg-white flex flex-col justify-center px-6 sm:px-10 md:px-16 lg:px-20 py-10">
+      <div className="w-full lg:w-1/2 xl:w-1/3 bg-[#ffffff] flex flex-col justify-center px-6 sm:px-10 md:px-16 lg:px-20 py-10">
        <img
                   src={logo}
                   alt="Logo"
@@ -41,7 +41,7 @@ const Login = () => {
             </span>
           </div>
 
-          <button className="w-full bg-[#FF6A00] text-white text-[18px] font-semibold py-[10px] rounded-md cursor-pointer hover:bg-orange-400">
+          <button className="w-full bg-[#00ABE4] text-white text-[18px] font-semibold py-[10px] rounded-md cursor-pointer hover:bg-blue-500">
             Login
           </button>
           <button className="w-full mt-4 py-[10px] rounded-md cursor-pointer font-semibold text-[18px] flex items-center justify-center gap-3 bg-white text-gray-700 border border-gray-300 shadow hover:shadow-md hover:bg-gray-50 transition">
