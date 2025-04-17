@@ -4,6 +4,7 @@ import publishImg from "../../assets/dashboard.png"
 import calendarImg from "../../assets/calendar.png"
 import engageImg from "../../assets/engage.png"
 import listeningImg from "../../assets/check.png"
+import { colors } from '../../Constants/Color'
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("analytics");
   const imageSources = {
@@ -71,7 +72,7 @@ const Dashboard = () => {
             }`}
           >
             <div className="flex items-center gap-4">
-              <div className="text-2xl bg-orange-100 text-[#00ABE4] p-2 rounded-full shadow-sm">{feature.icon}</div>
+              <div style={{color:colors.primary}} className="text-2xl bg-orange-100  p-2 rounded-full shadow-sm">{feature.icon}</div>
               <div className="font-bold text-lg group-hover:text-[#00ABE4] transition-colors duration-200">
                 {feature.label}
               </div>
@@ -95,7 +96,7 @@ const Dashboard = () => {
       </div>
 
       {/* Right Image Panel */}
-      <div className="w-full md:w-1/2 flex items-center justify-center p-10 bg-[#00ABE4] rounded-tl-[60px] relative">
+      <div style={{backgroundColor:colors.primary}} className="w-full md:w-1/2 flex items-center justify-center p-10  rounded-tl-[60px] relative">
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-white w-full max-w-md md:max-w-lg lg:max-w-xl">
           <img
             key={activeTab}
@@ -104,7 +105,7 @@ const Dashboard = () => {
             className="w-full h-auto object-contain rounded-xl"
           />
         </div>
-        <div className="absolute top-6 right-6 bg-white text-[#00ABE4] font-bold px-4 py-1 rounded-full shadow">Feature Preview</div>
+        <div style={{color:colors.primary}} className="absolute top-6 right-6 bg-white text-[#00ABE4] font-bold px-4 py-1 rounded-full shadow">Feature Preview</div>
       </div>
     </div>
 

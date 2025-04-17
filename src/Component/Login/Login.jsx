@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import logo from "../../assets/file.jpg";
 import caroline from "../../assets/caroline.png";
 import { FcGoogle } from "react-icons/fc";
-
+import { colors } from '../../Constants/Color';
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="flex flex-col lg:flex-row h-full lg:h-screen font-sans">
       {/* left-side-form-codee */}
-      <div className="w-full lg:w-1/2 xl:w-1/3 bg-[#ffffff] flex flex-col justify-center px-6 sm:px-10 md:px-16 lg:px-20 py-10">
+      <div style={{backgroundColor:colors.white}} className="w-full lg:w-1/2 xl:w-1/3  flex flex-col justify-center px-6 sm:px-10 md:px-16 lg:px-20 py-10">
        <img
                   src={logo}
                   alt="Logo"
@@ -41,10 +41,10 @@ const Login = () => {
             </span>
           </div>
 
-          <button className="w-full bg-[#00ABE4] text-white text-[18px] font-semibold py-[10px] rounded-md cursor-pointer hover:bg-blue-500">
+          <button style={{backgroundColor:colors.primary}} className="w-full  text-white text-[18px] font-semibold py-[10px] rounded-md cursor-pointer hover:bg-blue-500">
             Login
           </button>
-          <button className="w-full mt-4 py-[10px] rounded-md cursor-pointer font-semibold text-[18px] flex items-center justify-center gap-3 bg-white text-gray-700 border border-gray-300 shadow hover:shadow-md hover:bg-gray-50 transition">
+          <button style={{backgroundColor:colors.white}} className="w-full mt-4 py-[10px] rounded-md cursor-pointer font-semibold text-[18px] flex items-center justify-center gap-3  text-gray-700 border border-gray-300 shadow hover:shadow-md hover:bg-gray-50 transition">
           <FcGoogle  className="w-6 h-6" />
   Continue with Google
 </button>

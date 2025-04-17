@@ -3,6 +3,7 @@ import { FaMagic, FaHeadset, FaPiggyBank } from 'react-icons/fa';
 import coin from "../../assets/coin.svg"
 import heart from "../../assets/heart.png"
 import headphone from "../../assets/headphone.png"
+import { colors } from '../../Constants/Color';
 const features = [
     {
       icon: <img src={heart} className="text-purple-600 text-4xl mb-4 w-28 h-28" />,
@@ -35,7 +36,8 @@ const Features = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="bg-[#E9F1FA] rounded-2xl shadow-lg p-16 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center"
+            style={{backgroundColor:colors.secondary}}
+            className=" rounded-2xl shadow-lg p-16 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center"
           >
             <div className="mb-6  flex justify-center items-center">
               {feature.icon}

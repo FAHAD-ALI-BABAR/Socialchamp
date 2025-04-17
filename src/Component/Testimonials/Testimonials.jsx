@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {testimonials} from "../../Constants/Data"
+import { colors } from '../../Constants/Color';
 // const testimonials = [
 //     {
 //       name: 'John Doe',
@@ -56,7 +57,7 @@ const Testimonials = () => {
       };
   return (
     <>
-     <section className="bg-[#E9F1FA] py-16 px-4 sm:px-6 lg:px-8 w-full">
+     <section style={{backgroundColor:colors.secondary}} className=" py-16 px-4 sm:px-6 lg:px-8 w-full">
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-black text-gray-800 mb-3">What Our Clients Say</h2>
         <p className="text-gray-600 text-xl">Real feedback from businesses growing with us</p>
@@ -65,7 +66,7 @@ const Testimonials = () => {
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
           <div key={index} className="px-4">
-            <div className="bg-white rounded-2xl shadow-md p-16 mx-auto max-w-2xl text-center transition duration-500 ease-in-out transform">
+            <div style={{backgroundColor:colors.white}} className=" rounded-2xl shadow-md p-16 mx-auto max-w-2xl text-center transition duration-500 ease-in-out transform">
               <img
                 src={testimonial.image}
                 alt={testimonial.name}

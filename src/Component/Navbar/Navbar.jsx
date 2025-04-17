@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import logo from "../../assets/file.jpg";
 import { Link } from "react-router-dom";
+import {colors} from "../../Constants/Color"
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <>
       
-      <nav className="hidden md:flex w-full items-center justify-between px-6 lg:px-20 xl:px-40 py-6 shadow-sm font-sans bg-white">
+      <nav style={{backgroundColor:colors.white}} className="hidden md:flex w-full items-center justify-between px-6 lg:px-20 xl:px-40 py-6 shadow-sm font-sans ">
        
         <div className="flex items-center">
           <img
@@ -31,17 +32,17 @@ const Navbar = () => {
 
         
         <div className="flex items-center space-x-4 lg:space-x-6">
-          <button className="text-[16px] text-[#00ABE4] font-medium hover:underline">
+          <button style={{color:colors.primary}} className="text-[16px]  font-medium hover:underline">
             <Link to="/login">Login</Link>
           </button>
-          <button className="bg-[#E9F1FA] text-[16px] font-semibold text-black rounded-lg px-4 py-2 shadow hover:underline">
+          <button style={{backgroundColor:colors.secondary}} className=" text-[16px] font-semibold text-black rounded-lg px-4 py-2 shadow hover:underline">
             <Link to="/register">Register</Link>
           </button>
         </div>
       </nav>
 
       
-      <nav className="md:hidden w-full px-4 py-4 shadow-sm bg-white font-sans">
+      <nav style={{backgroundColor:colors.white}} className="md:hidden w-full px-4 py-4 shadow-sm bg-white font-sans">
         <div className="flex justify-between items-center">
           <img
             src={logo}
@@ -67,8 +68,8 @@ const Navbar = () => {
             {/* <span className="text-[16px] font-medium hover:underline">Pricing</span>
             <span className="text-[16px] font-medium hover:underline">Contact Sales</span>
             <hr /> */}
-            <button className="text-[16px] text-[#00ABE4] font-medium hover:underline">Login</button>
-            <button className="bg-[#E9F1FA] text-[16px] font-semibold text-black rounded-lg px-4 py-2 shadow hover:underline">
+            <button style={{color:colors.primary}} className="text-[16px]  font-medium hover:underline">Login</button>
+            <button style={{backgroundColor:colors.secondary}} className=" text-[16px] font-semibold text-black rounded-lg px-4 py-2 shadow hover:underline">
               Start Free Trial
             </button>
           </div>
