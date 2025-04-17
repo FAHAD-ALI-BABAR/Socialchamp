@@ -18,7 +18,7 @@ const Contact_sales = () => {
     <Features/>
     <Questions/>
     <Testimonials/>
-    <Featuregrid/>
+    {/* <Featuregrid/> */}
     {/* <Newsletter/> */}
     <Footer/>
     </>
